@@ -70,15 +70,10 @@
 		D92D195C231B84EE00D82662 /* livesharing */ = {
 			isa = PBXGroup;
 			children = (
-				D92D1971231B84FC00D82662 /* Calendar */,
-				D92D1972231B851300D82662 /* Artists */,
-				D92D1974231B853000D82662 /* Notification */,
-				D92D1973231B852100D82662 /* MyPage */,
-				D92D1963231B84EE00D82662 /* Main.storyboard */,
-				D92D195D231B84EE00D82662 /* AppDelegate.swift */,
-				D92D1966231B84EF00D82662 /* Assets.xcassets */,
-				D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */,
+				D92D1989231B941D00D82662 /* View */,
+				D92D1988231B940C00D82662 /* Model */,
 				D92D196B231B84EF00D82662 /* Info.plist */,
+				D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */,
 			);
 			path = livesharing;
 			sourceTree = "<group>";
@@ -126,6 +121,27 @@
 				D92D1986231B90DC00D82662 /* CalendarUseCase.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		D92D1988231B940C00D82662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D92D1989231B941D00D82662 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D92D1963231B84EE00D82662 /* Main.storyboard */,
+				D92D195D231B84EE00D82662 /* AppDelegate.swift */,
+				D92D1966231B84EF00D82662 /* Assets.xcassets */,
+				D92D1971231B84FC00D82662 /* Calendar */,
+				D92D1972231B851300D82662 /* Artists */,
+				D92D1974231B853000D82662 /* Notification */,
+				D92D1973231B852100D82662 /* MyPage */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
