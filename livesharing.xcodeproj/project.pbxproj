@@ -20,6 +20,7 @@
 		D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1981231B881300D82662 /* NotificationViewController.swift */; };
 		D92D1984231B883800D82662 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1983231B883800D82662 /* Notification.storyboard */; };
 		D92D1987231B90DC00D82662 /* CalendarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1986231B90DC00D82662 /* CalendarUseCase.swift */; };
+		D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D198A231B94D800D82662 /* CalendarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D92D1981231B881300D82662 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D92D1983231B883800D82662 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		D92D1986231B90DC00D82662 /* CalendarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUseCase.swift; sourceTree = "<group>"; };
+		D92D198A231B94D800D82662 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		D92D1988231B940C00D82662 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D92D198A231B94D800D82662 /* CalendarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
 				D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */,
+				D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
