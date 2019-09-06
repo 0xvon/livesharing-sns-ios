@@ -12,7 +12,6 @@
 		D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92D1966231B84EF00D82662 /* Assets.xcassets */; };
 		D92D196A231B84EF00D82662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */; };
 		D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1975231B85D800D82662 /* ArtistsViewController.swift */; };
-		D92D1978231B85E800D82662 /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1977231B85E800D82662 /* Artists.storyboard */; };
 		D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1979231B86DE00D82662 /* CalendarViewController.swift */; };
 		D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D197B231B86E800D82662 /* Calendar.storyboard */; };
 		D92D197E231B879D00D82662 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D197D231B879D00D82662 /* MyPage.storyboard */; };
@@ -23,6 +22,9 @@
 		D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D198A231B94D800D82662 /* CalendarModel.swift */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
+		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
+		D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3F12322AE4E003F376A /* ArtistPage.storyboard */; };
+		D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3F32322AE80003F376A /* ArtistPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,6 @@
 		D92D1969231B84EF00D82662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92D196B231B84EF00D82662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D92D1975231B85D800D82662 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
-		D92D1977231B85E800D82662 /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
 		D92D1979231B86DE00D82662 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D92D197B231B86E800D82662 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		D92D197D231B879D00D82662 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		D92D198A231B94D800D82662 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
+		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
+		D98DF3F12322AE4E003F376A /* ArtistPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistPage.storyboard; sourceTree = "<group>"; };
+		D98DF3F32322AE80003F376A /* ArtistPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,10 @@
 		D92D1972231B851300D82662 /* Artists */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF3F02322AE3E003F376A /* ArtistPage */,
 				D98DF3E623222746003F376A /* ArtistsCell */,
 				D92D1975231B85D800D82662 /* ArtistsViewController.swift */,
-				D92D1977231B85E800D82662 /* Artists.storyboard */,
+				D98DF3EE2322AD7F003F376A /* Artists.storyboard */,
 			);
 			path = Artists;
 			sourceTree = "<group>";
@@ -159,6 +164,15 @@
 				D98DF3EB23227383003F376A /* ArtistCell.xib */,
 			);
 			path = ArtistsCell;
+			sourceTree = "<group>";
+		};
+		D98DF3F02322AE3E003F376A /* ArtistPage */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF3F12322AE4E003F376A /* ArtistPage.storyboard */,
+				D98DF3F32322AE80003F376A /* ArtistPageViewController.swift */,
+			);
+			path = ArtistPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +236,10 @@
 				D92D196A231B84EF00D82662 /* LaunchScreen.storyboard in Resources */,
 				D92D197E231B879D00D82662 /* MyPage.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
+				D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */,
+				D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */,
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
-				D92D1978231B85E800D82662 /* Artists.storyboard in Resources */,
 				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
 			);
@@ -240,6 +255,7 @@
 				D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */,
 				D92D1987231B90DC00D82662 /* CalendarUseCase.swift in Sources */,
 				D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */,
+				D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */,
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
 				D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */,

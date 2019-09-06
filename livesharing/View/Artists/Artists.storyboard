@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WHO-kj-ILo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZk-Rs-lsX">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,19 +10,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Artists-->
-        <scene sceneID="TLu-al-fZ1">
+        <!--Artist-->
+        <scene sceneID="NT3-Wm-9CF">
             <objects>
-                <viewController storyboardIdentifier="Artists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHO-kj-ILo" customClass="ArtistsViewController" customModule="livesharing" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fVU-NT-YkB">
+                <viewController id="8U6-Cq-FJ4" customClass="ArtistsViewController" customModule="livesharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4oK-T3-GJH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-hr-1Lp">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j7j-lK-eTj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3gi-bg-mll">
-                                    <size key="itemSize" width="100" height="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X7U-i7-ymr">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -32,22 +32,50 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="U3g-hr-1Lp" firstAttribute="top" secondItem="5XL-Fa-LrB" secondAttribute="top" id="b9A-cw-BJY"/>
-                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="trailing" secondItem="U3g-hr-1Lp" secondAttribute="trailing" id="jMl-Q5-9Do"/>
-                            <constraint firstItem="U3g-hr-1Lp" firstAttribute="leading" secondItem="5XL-Fa-LrB" secondAttribute="leading" id="kRJ-Be-rkJ"/>
-                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="bottom" secondItem="U3g-hr-1Lp" secondAttribute="bottom" id="mWw-6o-odr"/>
+                            <constraint firstItem="OsW-CH-wg9" firstAttribute="trailing" secondItem="j7j-lK-eTj" secondAttribute="trailing" id="1YU-Dq-ES5"/>
+                            <constraint firstItem="OsW-CH-wg9" firstAttribute="bottom" secondItem="j7j-lK-eTj" secondAttribute="bottom" id="EjX-go-AuY"/>
+                            <constraint firstItem="j7j-lK-eTj" firstAttribute="top" secondItem="OsW-CH-wg9" secondAttribute="top" id="Epv-Dz-UJJ"/>
+                            <constraint firstItem="j7j-lK-eTj" firstAttribute="leading" secondItem="OsW-CH-wg9" secondAttribute="leading" id="GgJ-6s-Qpi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5XL-Fa-LrB"/>
+                        <viewLayoutGuide key="safeArea" id="OsW-CH-wg9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Artists" image="first" id="yW1-Xg-epz"/>
+                    <tabBarItem key="tabBarItem" title="Artist" image="first" id="4jC-HU-gin"/>
+                    <navigationItem key="navigationItem" id="Onl-9q-M7d"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView" destination="U3g-hr-1Lp" id="u4m-cJ-K6b"/>
+                        <outlet property="collectionView" destination="j7j-lK-eTj" id="pUv-rk-x54"/>
+                        <segue destination="a2c-rf-QGh" kind="push" identifier="toArtistPage" id="mku-fU-G9x"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aZA-FW-zaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHo-sw-QGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+            <point key="canvasLocation" x="986" y="325"/>
+        </scene>
+        <!--ArtistPage-->
+        <scene sceneID="HDH-11-8KK">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ArtistPage" storyboardName="ArtistPage" id="a2c-rf-QGh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HKs-73-0qf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRA-ed-9hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KsQ-sE-OT6">
+            <objects>
+                <navigationController id="zZk-Rs-lsX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ahT-gL-ME5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8U6-Cq-FJ4" kind="relationship" relationship="rootViewController" id="b5t-mP-use"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOA-1z-qWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="264"/>
         </scene>
     </scenes>
     <resources>

@@ -11,7 +11,12 @@ import UIKit
 
 
 class ArtistCellViewController: UICollectionViewCell {
+    @IBOutlet weak var artistImageView: UIImageView!
+    @IBOutlet weak var artistNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        artistImageView.image = UIImage(named: "myfirststory")
+        artistNameLabel.text = "MY FIRST STORY"
     }
 }
