@@ -10,8 +10,32 @@ import Foundation
 import UIKit
 
 class ArtistsViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var artistTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        artistTableView.delegate = self
+        artistTableView.dataSource = self
+        artistTableView.register(UINib(nibName: "ArtistCell", bundle: nil), forCellReuseIdentifier: "ArtistCell")
+        
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+}
+
+extension ArtistsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath) as! ArtistCellViewController
+        return cell
+    }
 }
