@@ -9,18 +9,21 @@
 import Foundation
 import UIKit
 
-class ArtistsViewController: UIViewController {
+class ArtistsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-    
-    @IBOutlet weak var artistTableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        artistTableView.delegate = self
-        artistTableView.dataSource = self
-        artistTableView.register(UINib(nibName: "ArtistCell", bundle: nil), forCellReuseIdentifier: "ArtistCell")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "ArtistCell", bundle: nil), forCellWithReuseIdentifier: "ArtistCell")
         
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.width / 2 - 20, height: 300)
+        layout.sectionInset = UIEdgeInsets(top: 30, left: 15, bottom: 30, right: 15)
+        collectionView.collectionViewLayout = layout
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,13 +32,15 @@ class ArtistsViewController: UIViewController {
     
 }
 
-extension ArtistsViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension ArtistsViewController {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath) as! ArtistCellViewController
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtistCell", for: indexPath) as! ArtistCellViewController
         return cell
     }
+    
+    
 }

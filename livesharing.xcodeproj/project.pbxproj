@@ -22,7 +22,7 @@
 		D92D1987231B90DC00D82662 /* CalendarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1986231B90DC00D82662 /* CalendarUseCase.swift */; };
 		D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D198A231B94D800D82662 /* CalendarModel.swift */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
-		D98DF3EA23222774003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3E923222774003F376A /* ArtistCell.xib */; };
+		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		D92D1986231B90DC00D82662 /* CalendarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUseCase.swift; sourceTree = "<group>"; };
 		D92D198A231B94D800D82662 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
-		D98DF3E923222774003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
+		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D98DF3E723222760003F376A /* ArtistCellViewController.swift */,
-				D98DF3E923222774003F376A /* ArtistCell.xib */,
+				D98DF3EB23227383003F376A /* ArtistCell.xib */,
 			);
 			path = ArtistsCell;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
 				D92D1978231B85E800D82662 /* Artists.storyboard in Resources */,
-				D98DF3EA23222774003F376A /* ArtistCell.xib in Resources */,
+				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

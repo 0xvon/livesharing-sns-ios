@@ -18,29 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhI-zC-QU3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-hr-1Lp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3gi-bg-mll">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="bottom" secondItem="RhI-zC-QU3" secondAttribute="bottom" id="TIH-gE-ATM"/>
-                            <constraint firstItem="RhI-zC-QU3" firstAttribute="top" secondItem="5XL-Fa-LrB" secondAttribute="top" id="TVu-0g-MZg"/>
-                            <constraint firstItem="RhI-zC-QU3" firstAttribute="leading" secondItem="5XL-Fa-LrB" secondAttribute="leading" id="Tjl-nK-gvt"/>
-                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="trailing" secondItem="RhI-zC-QU3" secondAttribute="trailing" id="iZd-Ff-q4p"/>
+                            <constraint firstItem="U3g-hr-1Lp" firstAttribute="top" secondItem="5XL-Fa-LrB" secondAttribute="top" id="b9A-cw-BJY"/>
+                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="trailing" secondItem="U3g-hr-1Lp" secondAttribute="trailing" id="jMl-Q5-9Do"/>
+                            <constraint firstItem="U3g-hr-1Lp" firstAttribute="leading" secondItem="5XL-Fa-LrB" secondAttribute="leading" id="kRJ-Be-rkJ"/>
+                            <constraint firstItem="5XL-Fa-LrB" firstAttribute="bottom" secondItem="U3g-hr-1Lp" secondAttribute="bottom" id="mWw-6o-odr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5XL-Fa-LrB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Artists" image="first" id="yW1-Xg-epz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="artistTableView" destination="RhI-zC-QU3" id="Na0-GU-nP3"/>
+                        <outlet property="collectionView" destination="U3g-hr-1Lp" id="u4m-cJ-K6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZA-FW-zaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="128"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
         </scene>
     </scenes>
     <resources>

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class ArtistCellViewController: UITableViewCell {
+class ArtistCellViewController: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
