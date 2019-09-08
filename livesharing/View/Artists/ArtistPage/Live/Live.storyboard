@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZyT-Gh-zj4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live View Controller-->
+        <scene sceneID="cbB-PK-iCx">
+            <objects>
+                <viewController id="ZyT-Gh-zj4" customClass="LiveViewController" customModule="livesharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZf-YP-4Hh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-7Q-A0K">
+                                <rect key="frame" x="186" y="44" width="26" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qxj-q1-9nB"/>
+                                    <constraint firstAttribute="width" constant="26" id="rtN-wl-xUn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4gM-7Q-A0K" firstAttribute="leading" secondItem="KVB-ei-ajk" secondAttribute="leading" constant="186" id="1dw-YA-cAY"/>
+                            <constraint firstItem="KVB-ei-ajk" firstAttribute="trailing" secondItem="4gM-7Q-A0K" secondAttribute="trailing" constant="202" id="C4Q-4i-gCK"/>
+                            <constraint firstItem="4gM-7Q-A0K" firstAttribute="top" secondItem="KVB-ei-ajk" secondAttribute="top" id="NyK-J1-3ag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KVB-ei-ajk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynI-m8-OOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="122"/>
+        </scene>
+    </scenes>
+</document>

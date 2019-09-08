@@ -47,7 +47,7 @@
                 <outlet property="artistImageView" destination="s49-S4-WH1" id="ICy-Gn-1Qk"/>
                 <outlet property="artistNameLabel" destination="huh-aA-KxK" id="Nae-yv-ysT"/>
             </connections>
-            <point key="canvasLocation" x="-7.2463768115942031" y="95.089285714285708"/>
+            <point key="canvasLocation" x="-236" y="93"/>
         </collectionViewCell>
     </objects>
 </document>
