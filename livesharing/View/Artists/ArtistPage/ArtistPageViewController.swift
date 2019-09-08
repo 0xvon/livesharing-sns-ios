@@ -69,21 +69,18 @@ class ArtistPageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func musicTabButtonTapped(_ sender: Any) {
-        print("hello")
         horizontalScrollView.contentOffset.x = 0
         underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
     }
     
     @IBAction func liveTabButtonTapped(_ sender: Any) {
-        print("goodbye")
         horizontalScrollView.contentOffset.x = 414
         underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
     }
     
     @IBAction func wikiTabButtonTapped(_ sender: Any) {
-        print("thank you")
         horizontalScrollView.contentOffset.x = 828
         underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
@@ -95,7 +92,6 @@ class ArtistPageViewController: UIViewController, UIScrollViewDelegate {
             underLineLeftConstraint.constant = scrollView.contentOffset.x / 3
             tabButton()
         } else {
-            print(scrollView.contentOffset)
             headerTopConstraint.constant = max(-(scrollView.contentOffset.y), +50)
         }
     }
