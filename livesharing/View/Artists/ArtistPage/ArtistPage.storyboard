@@ -105,7 +105,7 @@
                                     <constraint firstItem="rLJ-bl-kMG" firstAttribute="leading" secondItem="mFd-Pa-Z8D" secondAttribute="leading" id="sqO-n6-SKQ"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMq-xx-zDm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMq-xx-zDm">
                                 <rect key="frame" x="0.0" y="330" width="1252" height="566"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azb-zt-KTd">
