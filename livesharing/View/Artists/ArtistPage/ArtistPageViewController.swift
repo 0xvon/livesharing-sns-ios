@@ -37,7 +37,7 @@ class ArtistPageViewController: UIViewController, UIScrollViewDelegate {
         
         artistImageView.image = UIImage(named: "myfirststory")
         artistName.text = "MY FIRST STORY"
-        bandMember.text = "Vo. Hiro, Gt. Teru, Ba. Nobu, Dr. Kid'z"
+        bandMember.text = "Vo.Hiro, Gt.Teru, Ba.Nobu, Dr.Kid'z"
         bandMember.textColor = .gray
         horizontalScrollView.delegate = self
         musicWidhConstraint.constant = display.size.width

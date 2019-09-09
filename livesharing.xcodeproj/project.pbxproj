@@ -33,6 +33,8 @@
 		D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF40223252471003F376A /* ArtistWiki.storyboard */; };
 		D98DF4062325CA30003F376A /* MusicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF4052325CA30003F376A /* MusicCellViewController.swift */; };
 		D98DF4082325CA53003F376A /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4072325CA53003F376A /* MusicCell.xib */; };
+		D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF40A2325D7F1003F376A /* LiveCell.xib */; };
+		D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF40C2325D7FE003F376A /* LiveCellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		D98DF40223252471003F376A /* ArtistWiki.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistWiki.storyboard; sourceTree = "<group>"; };
 		D98DF4052325CA30003F376A /* MusicCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCellViewController.swift; sourceTree = "<group>"; };
 		D98DF4072325CA53003F376A /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		D98DF40A2325D7F1003F376A /* LiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
+		D98DF40C2325D7FE003F376A /* LiveCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 		D98DF3F523252368003F376A /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF4092325D7E0003F376A /* LiveCell */,
 				D98DF3FC232523F5003F376A /* LiveViewController.swift */,
 				D98DF3FE23252413003F376A /* Live.storyboard */,
 			);
@@ -229,6 +234,15 @@
 				D98DF4072325CA53003F376A /* MusicCell.xib */,
 			);
 			path = MusicCell;
+			sourceTree = "<group>";
+		};
+		D98DF4092325D7E0003F376A /* LiveCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF40C2325D7FE003F376A /* LiveCellViewController.swift */,
+				D98DF40A2325D7F1003F376A /* LiveCell.xib */,
+			);
+			path = LiveCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +312,7 @@
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D98DF4082325CA53003F376A /* MusicCell.xib in Resources */,
 				D98DF3FB232523BB003F376A /* Music.storyboard in Resources */,
+				D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
 				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
@@ -322,6 +337,7 @@
 				D98DF3F92325239A003F376A /* MusicViewController.swift in Sources */,
 				D98DF4062325CA30003F376A /* MusicCellViewController.swift in Sources */,
 				D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */,
+				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,
 				D98DF3FD232523F5003F376A /* LiveViewController.swift in Sources */,

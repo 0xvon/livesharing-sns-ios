@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="t3g-eZ-6Mh" customClass="LiveCellViewController" customModule="livesharing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t3g-eZ-6Mh" id="yNc-Ve-r8O">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCF-0m-fag">
+                        <rect key="frame" x="16" y="16" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXN-0C-Bfh">
+                        <rect key="frame" x="16" y="47" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-mT-psW">
+                        <rect key="frame" x="68" y="16" width="44" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-Qz-mWA">
+                        <rect key="frame" x="352" y="16" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="joinButtonTapped:" destination="t3g-eZ-6Mh" eventType="touchUpInside" id="q4f-6H-Yb6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XXN-0C-Bfh" secondAttribute="bottom" constant="29.5" id="3MV-oc-wl9"/>
+                    <constraint firstItem="rCF-0m-fag" firstAttribute="leading" secondItem="yNc-Ve-r8O" secondAttribute="leading" constant="16" id="7o9-13-FBs"/>
+                    <constraint firstItem="rCF-0m-fag" firstAttribute="top" secondItem="yNc-Ve-r8O" secondAttribute="top" constant="16" id="A0v-QJ-NXJ"/>
+                    <constraint firstAttribute="trailing" secondItem="d7M-Qz-mWA" secondAttribute="trailing" constant="16" id="ETf-dK-g18"/>
+                    <constraint firstItem="YVs-mT-psW" firstAttribute="leading" secondItem="rCF-0m-fag" secondAttribute="trailing" constant="10" id="Ja2-vO-XqP"/>
+                    <constraint firstItem="XXN-0C-Bfh" firstAttribute="leading" secondItem="rCF-0m-fag" secondAttribute="leading" id="ScR-Vy-gv3"/>
+                    <constraint firstItem="YVs-mT-psW" firstAttribute="top" secondItem="rCF-0m-fag" secondAttribute="top" id="csa-U4-5BC"/>
+                    <constraint firstItem="XXN-0C-Bfh" firstAttribute="top" secondItem="rCF-0m-fag" secondAttribute="bottom" constant="10" id="gpb-Y6-Uyq"/>
+                    <constraint firstItem="d7M-Qz-mWA" firstAttribute="top" secondItem="rCF-0m-fag" secondAttribute="top" id="izE-oj-GTo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="rCF-0m-fag" id="43K-6Y-x3u"/>
+                <outlet property="joinButton" destination="d7M-Qz-mWA" id="0KZ-mZ-6bG"/>
+                <outlet property="liveTitle" destination="YVs-mT-psW" id="krA-Jo-dgK"/>
+                <outlet property="placeLabel" destination="XXN-0C-Bfh" id="l0N-MO-NDy"/>
+            </connections>
+            <point key="canvasLocation" x="-30.434782608695656" y="117.85714285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
