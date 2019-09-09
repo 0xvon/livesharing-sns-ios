@@ -14,8 +14,13 @@ class ArtistsViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var registerArtistButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerArtistButton.setTitle("登録", for: .normal)
+        registerArtistButton.tintColor = .blue
         
         collectionView.delegate = self
         collectionView.dataSource = self

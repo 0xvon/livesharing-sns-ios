@@ -18,7 +18,6 @@
 		D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D197F231B87A700D82662 /* MyPageViewController.swift */; };
 		D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1981231B881300D82662 /* NotificationViewController.swift */; };
 		D92D1984231B883800D82662 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1983231B883800D82662 /* Notification.storyboard */; };
-		D92D1987231B90DC00D82662 /* CalendarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1986231B90DC00D82662 /* CalendarUseCase.swift */; };
 		D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D198A231B94D800D82662 /* CalendarModel.swift */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
@@ -35,6 +34,16 @@
 		D98DF4082325CA53003F376A /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4072325CA53003F376A /* MusicCell.xib */; };
 		D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF40A2325D7F1003F376A /* LiveCell.xib */; };
 		D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF40C2325D7FE003F376A /* LiveCellViewController.swift */; };
+		D98DF41023266597003F376A /* RegisterArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF40F23266597003F376A /* RegisterArtistViewController.swift */; };
+		D98DF4122326665A003F376A /* RegisterArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4112326665A003F376A /* RegisterArtist.storyboard */; };
+		D98DF41523267626003F376A /* CalendarCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF41423267626003F376A /* CalendarCellViewController.swift */; };
+		D98DF4172326764C003F376A /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4162326764C003F376A /* CalendarCell.xib */; };
+		D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF41923267D14003F376A /* LivePageViewController.swift */; };
+		D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF41B23267D30003F376A /* LivePage.storyboard */; };
+		D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF41E232683B2003F376A /* InfoViewController.swift */; };
+		D98DF421232683D0003F376A /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF420232683D0003F376A /* Info.storyboard */; };
+		D98DF42423268402003F376A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42323268402003F376A /* CommentViewController.swift */; };
+		D98DF4262326841B003F376A /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4252326841B003F376A /* Comment.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +60,6 @@
 		D92D197F231B87A700D82662 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		D92D1981231B881300D82662 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D92D1983231B883800D82662 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
-		D92D1986231B90DC00D82662 /* CalendarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUseCase.swift; sourceTree = "<group>"; };
 		D92D198A231B94D800D82662 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
@@ -68,6 +76,16 @@
 		D98DF4072325CA53003F376A /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 		D98DF40A2325D7F1003F376A /* LiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
 		D98DF40C2325D7FE003F376A /* LiveCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCellViewController.swift; sourceTree = "<group>"; };
+		D98DF40F23266597003F376A /* RegisterArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterArtistViewController.swift; sourceTree = "<group>"; };
+		D98DF4112326665A003F376A /* RegisterArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterArtist.storyboard; sourceTree = "<group>"; };
+		D98DF41423267626003F376A /* CalendarCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellViewController.swift; sourceTree = "<group>"; };
+		D98DF4162326764C003F376A /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		D98DF41923267D14003F376A /* LivePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePageViewController.swift; sourceTree = "<group>"; };
+		D98DF41B23267D30003F376A /* LivePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LivePage.storyboard; sourceTree = "<group>"; };
+		D98DF41E232683B2003F376A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D98DF420232683D0003F376A /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		D98DF42323268402003F376A /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		D98DF4252326841B003F376A /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +129,8 @@
 		D92D1971231B84FC00D82662 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				D92D1985231B90C400D82662 /* Domain */,
+				D98DF41823267D05003F376A /* LivePage */,
+				D98DF4132326761B003F376A /* CalendarCell */,
 				D92D1979231B86DE00D82662 /* CalendarViewController.swift */,
 				D92D197B231B86E800D82662 /* Calendar.storyboard */,
 			);
@@ -123,6 +142,7 @@
 			children = (
 				D98DF3F02322AE3E003F376A /* ArtistPage */,
 				D98DF3E623222746003F376A /* ArtistsCell */,
+				D98DF40E23266581003F376A /* RegisterArtist */,
 				D92D1975231B85D800D82662 /* ArtistsViewController.swift */,
 				D98DF3EE2322AD7F003F376A /* Artists.storyboard */,
 			);
@@ -145,14 +165,6 @@
 				D92D1983231B883800D82662 /* Notification.storyboard */,
 			);
 			path = Notification;
-			sourceTree = "<group>";
-		};
-		D92D1985231B90C400D82662 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				D92D1986231B90DC00D82662 /* CalendarUseCase.swift */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		D92D1988231B940C00D82662 /* Model */ = {
@@ -245,6 +257,53 @@
 			path = LiveCell;
 			sourceTree = "<group>";
 		};
+		D98DF40E23266581003F376A /* RegisterArtist */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF40F23266597003F376A /* RegisterArtistViewController.swift */,
+				D98DF4112326665A003F376A /* RegisterArtist.storyboard */,
+			);
+			path = RegisterArtist;
+			sourceTree = "<group>";
+		};
+		D98DF4132326761B003F376A /* CalendarCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF41423267626003F376A /* CalendarCellViewController.swift */,
+				D98DF4162326764C003F376A /* CalendarCell.xib */,
+			);
+			path = CalendarCell;
+			sourceTree = "<group>";
+		};
+		D98DF41823267D05003F376A /* LivePage */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF41D232683A2003F376A /* Info */,
+				D98DF422232683F1003F376A /* Comment */,
+				D98DF41923267D14003F376A /* LivePageViewController.swift */,
+				D98DF41B23267D30003F376A /* LivePage.storyboard */,
+			);
+			path = LivePage;
+			sourceTree = "<group>";
+		};
+		D98DF41D232683A2003F376A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF41E232683B2003F376A /* InfoViewController.swift */,
+				D98DF420232683D0003F376A /* Info.storyboard */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D98DF422232683F1003F376A /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF42323268402003F376A /* CommentViewController.swift */,
+				D98DF4252326841B003F376A /* Comment.storyboard */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,20 +362,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98DF421232683D0003F376A /* Info.storyboard in Resources */,
 				D92D196A231B84EF00D82662 /* LaunchScreen.storyboard in Resources */,
 				D92D197E231B879D00D82662 /* MyPage.storyboard in Resources */,
 				D98DF3FF23252413003F376A /* Live.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
 				D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */,
 				D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */,
+				D98DF4262326841B003F376A /* Comment.storyboard in Resources */,
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D98DF4082325CA53003F376A /* MusicCell.xib in Resources */,
 				D98DF3FB232523BB003F376A /* Music.storyboard in Resources */,
 				D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
+				D98DF4172326764C003F376A /* CalendarCell.xib in Resources */,
 				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
+				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
 				D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */,
+				D98DF4122326665A003F376A /* RegisterArtist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,15 +392,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */,
-				D92D1987231B90DC00D82662 /* CalendarUseCase.swift in Sources */,
 				D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */,
 				D98DF4012325243D003F376A /* ArtistWikiViewController.swift in Sources */,
+				D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */,
 				D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */,
+				D98DF41523267626003F376A /* CalendarCellViewController.swift in Sources */,
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
+				D98DF42423268402003F376A /* CommentViewController.swift in Sources */,
+				D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */,
 				D98DF3F92325239A003F376A /* MusicViewController.swift in Sources */,
 				D98DF4062325CA30003F376A /* MusicCellViewController.swift in Sources */,
 				D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */,
+				D98DF41023266597003F376A /* RegisterArtistViewController.swift in Sources */,
 				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,

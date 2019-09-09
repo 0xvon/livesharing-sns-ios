@@ -40,16 +40,39 @@
                         <viewLayoutGuide key="safeArea" id="OsW-CH-wg9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Artist" image="first" id="4jC-HU-gin"/>
-                    <navigationItem key="navigationItem" id="Onl-9q-M7d"/>
+                    <navigationItem key="navigationItem" id="Onl-9q-M7d">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Xvk-y9-d3m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xE4-He-pf2">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="registerArtistButtonTapped:" destination="8U6-Cq-FJ4" eventType="touchUpInside" id="ZZV-UA-hGf"/>
+                                    <segue destination="AbF-ae-TZV" kind="show" identifier="toRegisterArtist" id="g0B-xJ-ToW"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="j7j-lK-eTj" id="pUv-rk-x54"/>
+                        <outlet property="registerArtistButton" destination="xE4-He-pf2" id="mIH-TD-WKl"/>
                         <segue destination="a2c-rf-QGh" kind="push" identifier="toArtistPage" id="mku-fU-G9x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHo-sw-QGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986" y="325"/>
+        </scene>
+        <!--RegisterArtist-->
+        <scene sceneID="Q0z-Aa-Ot6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterArtist" id="AbF-ae-TZV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7DL-kK-QqB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PI9-i4-h1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="82"/>
         </scene>
         <!--ArtistPage-->
         <scene sceneID="HDH-11-8KK">
