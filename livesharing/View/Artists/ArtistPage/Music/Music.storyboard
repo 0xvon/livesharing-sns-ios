@@ -18,24 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXS-rT-JFG">
-                                <rect key="frame" x="184" y="44" width="46" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Hfn-by-3fQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5zr-9i-LYp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0ZJ-70-lwr" firstAttribute="trailing" secondItem="KXS-rT-JFG" secondAttribute="trailing" constant="184" id="FOf-sv-26A"/>
-                            <constraint firstItem="KXS-rT-JFG" firstAttribute="top" secondItem="0ZJ-70-lwr" secondAttribute="top" id="bDU-D0-SiH"/>
-                            <constraint firstItem="KXS-rT-JFG" firstAttribute="leading" secondItem="0ZJ-70-lwr" secondAttribute="leading" constant="184" id="rye-x2-xZ6"/>
+                            <constraint firstItem="0ZJ-70-lwr" firstAttribute="bottom" secondItem="5zr-9i-LYp" secondAttribute="bottom" id="gnG-GN-Vty"/>
+                            <constraint firstItem="5zr-9i-LYp" firstAttribute="top" secondItem="0ZJ-70-lwr" secondAttribute="top" id="jrT-oS-h1T"/>
+                            <constraint firstItem="5zr-9i-LYp" firstAttribute="leading" secondItem="0ZJ-70-lwr" secondAttribute="leading" id="uUj-3Q-lES"/>
+                            <constraint firstItem="0ZJ-70-lwr" firstAttribute="trailing" secondItem="5zr-9i-LYp" secondAttribute="trailing" id="uzv-lU-Ew6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0ZJ-70-lwr"/>
                     </view>
+                    <connections>
+                        <outlet property="musicTableView" destination="5zr-9i-LYp" id="nKw-E2-Jeb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqO-uM-PGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
