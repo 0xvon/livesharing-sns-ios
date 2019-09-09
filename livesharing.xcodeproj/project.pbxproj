@@ -44,6 +44,8 @@
 		D98DF421232683D0003F376A /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF420232683D0003F376A /* Info.storyboard */; };
 		D98DF42423268402003F376A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42323268402003F376A /* CommentViewController.swift */; };
 		D98DF4262326841B003F376A /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4252326841B003F376A /* Comment.storyboard */; };
+		D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42823268751003F376A /* CommentCellViewController.swift */; };
+		D98DF42B2326876F003F376A /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF42A2326876F003F376A /* CommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		D98DF420232683D0003F376A /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		D98DF42323268402003F376A /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		D98DF4252326841B003F376A /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
+		D98DF42823268751003F376A /* CommentCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewController.swift; sourceTree = "<group>"; };
+		D98DF42A2326876F003F376A /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,10 +302,20 @@
 		D98DF422232683F1003F376A /* Comment */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF42723268741003F376A /* CommentCell */,
 				D98DF42323268402003F376A /* CommentViewController.swift */,
 				D98DF4252326841B003F376A /* Comment.storyboard */,
 			);
 			path = Comment;
+			sourceTree = "<group>";
+		};
+		D98DF42723268741003F376A /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF42823268751003F376A /* CommentCellViewController.swift */,
+				D98DF42A2326876F003F376A /* CommentCell.xib */,
+			);
+			path = CommentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +391,7 @@
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
 				D98DF4172326764C003F376A /* CalendarCell.xib in Resources */,
 				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
+				D98DF42B2326876F003F376A /* CommentCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
 				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
 				D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */,
@@ -408,6 +423,7 @@
 				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,
+				D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */,
 				D98DF3FD232523F5003F376A /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
