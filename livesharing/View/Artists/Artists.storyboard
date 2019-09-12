@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j7j-lK-eTj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X7U-i7-ymr">
                                     <size key="itemSize" width="50" height="50"/>
@@ -29,13 +29,20 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vLQ-Fo-qtv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OsW-CH-wg9" firstAttribute="trailing" secondItem="j7j-lK-eTj" secondAttribute="trailing" id="1YU-Dq-ES5"/>
+                            <constraint firstItem="vLQ-Fo-qtv" firstAttribute="leading" secondItem="OsW-CH-wg9" secondAttribute="leading" id="5ZU-Yh-3eZ"/>
                             <constraint firstItem="OsW-CH-wg9" firstAttribute="bottom" secondItem="j7j-lK-eTj" secondAttribute="bottom" id="EjX-go-AuY"/>
-                            <constraint firstItem="j7j-lK-eTj" firstAttribute="top" secondItem="OsW-CH-wg9" secondAttribute="top" id="Epv-Dz-UJJ"/>
+                            <constraint firstItem="vLQ-Fo-qtv" firstAttribute="top" secondItem="OsW-CH-wg9" secondAttribute="top" id="Eol-kG-qYa"/>
                             <constraint firstItem="j7j-lK-eTj" firstAttribute="leading" secondItem="OsW-CH-wg9" secondAttribute="leading" id="GgJ-6s-Qpi"/>
+                            <constraint firstItem="j7j-lK-eTj" firstAttribute="top" secondItem="vLQ-Fo-qtv" secondAttribute="bottom" id="nXk-ak-3Ig"/>
+                            <constraint firstItem="vLQ-Fo-qtv" firstAttribute="trailing" secondItem="OsW-CH-wg9" secondAttribute="trailing" id="qo0-X6-Msa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OsW-CH-wg9"/>
                     </view>
@@ -55,6 +62,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="artistSearchBar" destination="vLQ-Fo-qtv" id="TLN-Is-ggF"/>
                         <outlet property="collectionView" destination="j7j-lK-eTj" id="pUv-rk-x54"/>
                         <outlet property="registerArtistButton" destination="xE4-He-pf2" id="mIH-TD-WKl"/>
                         <segue destination="a2c-rf-QGh" kind="push" identifier="toArtistPage" id="mku-fU-G9x"/>
@@ -62,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHo-sw-QGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="325"/>
+            <point key="canvasLocation" x="985.50724637681162" y="324.77678571428572"/>
         </scene>
         <!--RegisterArtist-->
         <scene sceneID="Q0z-Aa-Ot6">

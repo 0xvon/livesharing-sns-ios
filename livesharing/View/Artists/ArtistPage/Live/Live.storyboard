@@ -34,11 +34,20 @@
                     </view>
                     <connections>
                         <outlet property="liveTableView" destination="f2o-EF-bWu" id="EOb-1J-9K0"/>
+                        <segue destination="8r7-Yd-Rrg" kind="show" identifier="toLivePage" id="Yjm-WZ-74a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynI-m8-OOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="122"/>
+            <point key="canvasLocation" x="-209" y="66"/>
+        </scene>
+        <!--LivePage-->
+        <scene sceneID="E8a-VW-tHl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LivePage" id="8r7-Yd-Rrg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdc-60-MKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-120"/>
         </scene>
     </scenes>
 </document>

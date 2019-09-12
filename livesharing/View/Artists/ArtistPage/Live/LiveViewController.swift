@@ -31,4 +31,8 @@ extension LiveViewController {
         let cell: UITableViewCell = liveTableView.dequeueReusableCell(withIdentifier: "LiveCell", for: indexPath) as! LiveCellViewController
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toLivePage", sender: nil)
+    }
 }

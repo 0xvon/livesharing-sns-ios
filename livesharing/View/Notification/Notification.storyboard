@@ -18,19 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh8-1x-H1E">
-                                <rect key="frame" x="163" y="412" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lpU-FV-2M6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lpU-FV-2M6" firstAttribute="leading" secondItem="jOl-W6-5dL" secondAttribute="leading" id="5nq-16-VJM"/>
+                            <constraint firstItem="jOl-W6-5dL" firstAttribute="trailing" secondItem="lpU-FV-2M6" secondAttribute="trailing" id="8WW-RB-ObY"/>
+                            <constraint firstItem="lpU-FV-2M6" firstAttribute="top" secondItem="jOl-W6-5dL" secondAttribute="top" id="OUg-Rt-14Y"/>
+                            <constraint firstItem="jOl-W6-5dL" firstAttribute="bottom" secondItem="lpU-FV-2M6" secondAttribute="bottom" id="bmq-bL-efY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jOl-W6-5dL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifcation" image="first" id="q7r-6E-kP9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationTableView" destination="lpU-FV-2M6" id="LhM-P9-C1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zn3-a6-3uZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

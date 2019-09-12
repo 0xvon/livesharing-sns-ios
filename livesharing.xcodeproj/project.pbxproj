@@ -46,6 +46,8 @@
 		D98DF4262326841B003F376A /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF4252326841B003F376A /* Comment.storyboard */; };
 		D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42823268751003F376A /* CommentCellViewController.swift */; };
 		D98DF42B2326876F003F376A /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF42A2326876F003F376A /* CommentCell.xib */; };
+		D98DF42E232693D3003F376A /* NotificationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42D232693D3003F376A /* NotificationCellViewController.swift */; };
+		D98DF430232693FC003F376A /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF42F232693FC003F376A /* NotificationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		D98DF4252326841B003F376A /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 		D98DF42823268751003F376A /* CommentCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewController.swift; sourceTree = "<group>"; };
 		D98DF42A2326876F003F376A /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		D98DF42D232693D3003F376A /* NotificationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewController.swift; sourceTree = "<group>"; };
+		D98DF42F232693FC003F376A /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		D92D1974231B853000D82662 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF42C232693BD003F376A /* NotificationCell */,
 				D92D1981231B881300D82662 /* NotificationViewController.swift */,
 				D92D1983231B883800D82662 /* Notification.storyboard */,
 			);
@@ -318,6 +323,15 @@
 			path = CommentCell;
 			sourceTree = "<group>";
 		};
+		D98DF42C232693BD003F376A /* NotificationCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF42D232693D3003F376A /* NotificationCellViewController.swift */,
+				D98DF42F232693FC003F376A /* NotificationCell.xib */,
+			);
+			path = NotificationCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +401,7 @@
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D98DF4082325CA53003F376A /* MusicCell.xib in Resources */,
 				D98DF3FB232523BB003F376A /* Music.storyboard in Resources */,
+				D98DF430232693FC003F376A /* NotificationCell.xib in Resources */,
 				D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
 				D98DF4172326764C003F376A /* CalendarCell.xib in Resources */,
@@ -423,6 +438,7 @@
 				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D92D198B231B94D800D82662 /* CalendarModel.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,
+				D98DF42E232693D3003F376A /* NotificationCellViewController.swift in Sources */,
 				D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */,
 				D98DF3FD232523F5003F376A /* LiveViewController.swift in Sources */,
 			);
