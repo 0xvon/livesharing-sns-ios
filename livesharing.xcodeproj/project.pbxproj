@@ -226,6 +226,7 @@
 				D92D1963231B84EE00D82662 /* Main.storyboard */,
 				D92D195D231B84EE00D82662 /* AppDelegate.swift */,
 				D92D1966231B84EF00D82662 /* Assets.xcassets */,
+				D9A7A351232B79B4002F410C /* WorkThrough */,
 				D92D1971231B84FC00D82662 /* Calendar */,
 				D92D1972231B851300D82662 /* Artists */,
 				D92D1974231B853000D82662 /* Notification */,
@@ -404,6 +405,13 @@
 				D9A7A341232B6868002F410C /* LiveScheduleCell.xib */,
 			);
 			path = LiveScheduleCell;
+			sourceTree = "<group>";
+		};
+		D9A7A351232B79B4002F410C /* WorkThrough */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WorkThrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
