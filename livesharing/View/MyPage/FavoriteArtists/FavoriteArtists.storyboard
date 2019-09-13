@@ -18,15 +18,12 @@
                         <viewControllerLayoutGuide type="bottom" id="2Dn-jH-ReV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mmy-qb-CeF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="81q-4A-780">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="81q-4A-780">
+                                <rect key="frame" x="0.0" y="77" width="414" height="388"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="380" id="qMf-lF-Qxe"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wxB-7K-jAL">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -45,25 +42,35 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAC-sH-kUk">
-                                <rect key="frame" x="352" y="370" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="334" y="470" width="64" height="30"/>
+                                <state key="normal" title="see more"/>
                                 <connections>
                                     <action selector="seeMoreButtonTapped:" destination="KEc-KG-uaw" eventType="touchUpInside" id="bMq-LH-jgm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お気に入りアーティスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87E-AK-pCv">
+                                <rect key="frame" x="6" y="16" width="213" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="81q-4A-780" firstAttribute="trailing" secondItem="mmy-qb-CeF" secondAttribute="trailing" id="2GD-Ck-pIs"/>
                             <constraint firstAttribute="trailing" secondItem="QAC-sH-kUk" secondAttribute="trailing" constant="16" id="5l6-UF-RDp"/>
-                            <constraint firstItem="81q-4A-780" firstAttribute="top" secondItem="mmy-qb-CeF" secondAttribute="top" id="5v4-Tb-SlA"/>
+                            <constraint firstItem="QAC-sH-kUk" firstAttribute="top" secondItem="81q-4A-780" secondAttribute="bottom" constant="5" id="CZA-uO-e1Y"/>
                             <constraint firstItem="81q-4A-780" firstAttribute="leading" secondItem="mmy-qb-CeF" secondAttribute="leading" id="Hcj-DQ-viV"/>
+                            <constraint firstItem="87E-AK-pCv" firstAttribute="top" secondItem="mmy-qb-CeF" secondAttribute="top" constant="16" id="KgF-eR-C2n"/>
                             <constraint firstAttribute="bottom" secondItem="QAC-sH-kUk" secondAttribute="bottom" id="WLd-a1-NE8"/>
+                            <constraint firstItem="81q-4A-780" firstAttribute="top" secondItem="87E-AK-pCv" secondAttribute="bottom" constant="38" id="phn-oq-w9C"/>
+                            <constraint firstItem="87E-AK-pCv" firstAttribute="leading" secondItem="mmy-qb-CeF" secondAttribute="leading" constant="6" id="zcJ-EL-uTY"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="400"/>
+                    <size key="freeformSize" width="414" height="500"/>
                     <connections>
                         <outlet property="collectionView" destination="81q-4A-780" id="ORi-Rg-jw6"/>
+                        <outlet property="favoriteArtistTitle" destination="87E-AK-pCv" id="1o9-u0-eHH"/>
                         <outlet property="seeMoreButton" destination="QAC-sH-kUk" id="9ki-st-HdB"/>
                     </connections>
                 </viewController>

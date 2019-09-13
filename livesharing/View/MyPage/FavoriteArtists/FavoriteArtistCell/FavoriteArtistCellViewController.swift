@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 
 class FavoriteArtistCellViewController: UICollectionViewCell {
+    
+    @IBOutlet weak var favoriteArtistImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        favoriteArtistImage.image = UIImage(named: "antithese")
     }
 }

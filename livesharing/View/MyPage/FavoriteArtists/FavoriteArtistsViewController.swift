@@ -14,6 +14,7 @@ class FavoriteArtistsViewController: UIViewController, UICollectionViewDelegate,
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var seeMoreButton: UIButton!
+    @IBOutlet weak var favoriteArtistTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,12 @@ class FavoriteArtistsViewController: UIViewController, UICollectionViewDelegate,
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "FavoriteArtistCell", bundle: nil), forCellWithReuseIdentifier: "FavoriteArtistCell")
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.width / 3 - 10, height: self.view.bounds.width / 3 - 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        collectionView.collectionViewLayout = layout
+        
+        favoriteArtistTitle.tintColor = .blue
     }
     
     @IBAction func seeMoreButtonTapped(_ sender: Any) {
