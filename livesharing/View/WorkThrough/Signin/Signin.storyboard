@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ztn-Ms-L2q">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signin View Controller-->
+        <scene sceneID="5j0-vk-mHr">
+            <objects>
+                <viewController id="Ztn-Ms-L2q" customClass="SigninViewController" customModule="livesharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Td-az-XrY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-oI-x4e">
+                                <rect key="frame" x="219" y="403" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="メールアドレスで登録"/>
+                                <connections>
+                                    <action selector="mailButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="yMO-D3-1cv"/>
+                                    <segue destination="sIT-Il-vsu" kind="push" id="gBx-NG-qi0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXD-NN-Gxa">
+                                <rect key="frame" x="51" y="403" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="電話番号で登録"/>
+                                <connections>
+                                    <action selector="phoneButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="Dsr-Mk-tW4"/>
+                                    <segue destination="a5u-0a-C6e" kind="push" id="CKp-Jw-hya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-xb-GQS">
+                                <rect key="frame" x="51" y="457" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Googleでサインイン"/>
+                                <connections>
+                                    <action selector="googleButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="NsB-mf-XD7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipm-0T-0BU">
+                                <rect key="frame" x="232" y="457" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Twitterでサインイン"/>
+                                <connections>
+                                    <action selector="twitterButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="1hY-uI-qUS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="または" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1t-q6-WzB">
+                                <rect key="frame" x="181" y="540" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Live Sharing App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R0-8P-xDR">
+                                <rect key="frame" x="98" y="263" width="218" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXh-ik-nuP">
+                                <rect key="frame" x="176" y="597" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="hCy-gV-bgn"/>
+                                    <segue destination="sNt-7m-rve" kind="push" id="6us-W6-BH8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cHu-TJ-RVO"/>
+                    </view>
+                    <connections>
+                        <outlet property="googleButton" destination="1et-xb-GQS" id="IQl-GJ-5zJ"/>
+                        <outlet property="loginButton" destination="xXh-ik-nuP" id="hla-oC-nvl"/>
+                        <outlet property="mailButton" destination="Unm-oI-x4e" id="MOR-ee-4lg"/>
+                        <outlet property="phoneButton" destination="aXD-NN-Gxa" id="kzA-0I-8Bh"/>
+                        <outlet property="twitterButton" destination="Ipm-0T-0BU" id="65k-Tv-9Cf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJI-4X-pHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--SigninWithMailaddredd-->
+        <scene sceneID="18q-Gb-OC6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SigninWithMailaddredd" id="sIT-Il-vsu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W6N-MY-cbx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flo-9O-Z0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="21"/>
+        </scene>
+        <!--SigninWithPhoneNumber-->
+        <scene sceneID="ulH-FM-WAk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SigninWithPhoneNumber" id="a5u-0a-C6e" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QZk-3z-3PF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhM-hy-Mod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="-87"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="LVr-3w-E0k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="sNt-7m-rve" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KPD-Kp-pXO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3Z-Tz-joD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="133"/>
+        </scene>
+    </scenes>
+</document>

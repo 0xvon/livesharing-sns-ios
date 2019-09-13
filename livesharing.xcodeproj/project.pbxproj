@@ -19,7 +19,15 @@
 		D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D197F231B87A700D82662 /* MyPageViewController.swift */; };
 		D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1981231B881300D82662 /* NotificationViewController.swift */; };
 		D92D1984231B883800D82662 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1983231B883800D82662 /* Notification.storyboard */; };
-		D94A215E232B7F49000D4071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94A215D232B7F49000D4071 /* GoogleService-Info.plist */; };
+		D94A2161232B8106000D4071 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A2160232B8106000D4071 /* SigninViewController.swift */; };
+		D94A2163232B8141000D4071 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A2162232B8141000D4071 /* Signin.storyboard */; };
+		D94A2168232B83A1000D4071 /* SigninWithPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A2167232B83A1000D4071 /* SigninWithPhoneNumberViewController.swift */; };
+		D94A216A232B83CA000D4071 /* SigninWithPhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A2169232B83CA000D4071 /* SigninWithPhoneNumber.storyboard */; };
+		D94A216C232B846C000D4071 /* SigninWithMainaddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A216B232B846C000D4071 /* SigninWithMainaddressViewController.swift */; };
+		D94A216E232B8491000D4071 /* SigninWithMailaddredd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A216D232B8491000D4071 /* SigninWithMailaddredd.storyboard */; };
+		D94A2170232B8500000D4071 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A216F232B8500000D4071 /* LoginViewController.swift */; };
+		D94A2172232B851C000D4071 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A2171232B851C000D4071 /* Login.storyboard */; };
+		D94A2174232B88EC000D4071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94A2173232B88EC000D4071 /* GoogleService-Info.plist */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
@@ -83,7 +91,15 @@
 		D92D197F231B87A700D82662 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		D92D1981231B881300D82662 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D92D1983231B883800D82662 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
-		D94A215D232B7F49000D4071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D94A2160232B8106000D4071 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		D94A2162232B8141000D4071 /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
+		D94A2167232B83A1000D4071 /* SigninWithPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		D94A2169232B83CA000D4071 /* SigninWithPhoneNumber.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SigninWithPhoneNumber.storyboard; sourceTree = "<group>"; };
+		D94A216B232B846C000D4071 /* SigninWithMainaddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithMainaddressViewController.swift; sourceTree = "<group>"; };
+		D94A216D232B8491000D4071 /* SigninWithMailaddredd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SigninWithMailaddredd.storyboard; sourceTree = "<group>"; };
+		D94A216F232B8500000D4071 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D94A2171232B851C000D4071 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D94A2173232B88EC000D4071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -183,7 +199,7 @@
 				D92D1989231B941D00D82662 /* View */,
 				D92D1988231B940C00D82662 /* Model */,
 				D92D196B231B84EF00D82662 /* Info.plist */,
-				D94A215D232B7F49000D4071 /* GoogleService-Info.plist */,
+				D94A2173232B88EC000D4071 /* GoogleService-Info.plist */,
 				D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */,
 			);
 			path = livesharing;
@@ -260,6 +276,45 @@
 				D92D1973231B852100D82662 /* MyPage */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D94A215F232B80A6000D4071 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				D94A2164232B832C000D4071 /* SigninWIthPhoneNumber */,
+				D94A2166232B8348000D4071 /* SigninWithMailaddress */,
+				D94A2165232B8345000D4071 /* Login */,
+				D94A2160232B8106000D4071 /* SigninViewController.swift */,
+				D94A2162232B8141000D4071 /* Signin.storyboard */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		D94A2164232B832C000D4071 /* SigninWIthPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				D94A2167232B83A1000D4071 /* SigninWithPhoneNumberViewController.swift */,
+				D94A2169232B83CA000D4071 /* SigninWithPhoneNumber.storyboard */,
+			);
+			path = SigninWIthPhoneNumber;
+			sourceTree = "<group>";
+		};
+		D94A2165232B8345000D4071 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D94A216F232B8500000D4071 /* LoginViewController.swift */,
+				D94A2171232B851C000D4071 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D94A2166232B8348000D4071 /* SigninWithMailaddress */ = {
+			isa = PBXGroup;
+			children = (
+				D94A216B232B846C000D4071 /* SigninWithMainaddressViewController.swift */,
+				D94A216D232B8491000D4071 /* SigninWithMailaddredd.storyboard */,
+			);
+			path = SigninWithMailaddress;
 			sourceTree = "<group>";
 		};
 		D98DF3E623222746003F376A /* ArtistsCell */ = {
@@ -437,6 +492,7 @@
 		D9A7A351232B79B4002F410C /* WorkThrough */ = {
 			isa = PBXGroup;
 			children = (
+				D94A215F232B80A6000D4071 /* Signin */,
 			);
 			path = WorkThrough;
 			sourceTree = "<group>";
@@ -507,19 +563,23 @@
 				D9A7A342232B6868002F410C /* LiveScheduleCell.xib in Resources */,
 				D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */,
 				D98DF3FF23252413003F376A /* Live.storyboard in Resources */,
+				D94A2163232B8141000D4071 /* Signin.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
+				D94A2172232B851C000D4071 /* Login.storyboard in Resources */,
 				D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */,
 				D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */,
 				D98DF4262326841B003F376A /* Comment.storyboard in Resources */,
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
+				D94A216A232B83CA000D4071 /* SigninWithPhoneNumber.storyboard in Resources */,
 				D98DF4082325CA53003F376A /* MusicCell.xib in Resources */,
 				D98DF3FB232523BB003F376A /* Music.storyboard in Resources */,
-				D94A215E232B7F49000D4071 /* GoogleService-Info.plist in Resources */,
 				D98DF430232693FC003F376A /* NotificationCell.xib in Resources */,
+				D94A2174232B88EC000D4071 /* GoogleService-Info.plist in Resources */,
 				D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
 				D98DF4172326764C003F376A /* CalendarCell.xib in Resources */,
 				D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */,
+				D94A216E232B8491000D4071 /* SigninWithMailaddredd.storyboard in Resources */,
 				D98DF42B2326876F003F376A /* CommentCell.xib in Resources */,
 				D92D1984231B883800D82662 /* Notification.storyboard in Resources */,
 				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
@@ -580,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A7A346232B6CC8002F410C /* LiveModel.swift in Sources */,
+				D94A216C232B846C000D4071 /* SigninWithMainaddressViewController.swift in Sources */,
 				D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */,
 				D9A7A34A232B6CDA002F410C /* MusicModel.swift in Sources */,
 				D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */,
@@ -589,6 +650,7 @@
 				D9A7A350232B70A3002F410C /* CommentModel.swift in Sources */,
 				D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */,
 				D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */,
+				D94A2168232B83A1000D4071 /* SigninWithPhoneNumberViewController.swift in Sources */,
 				D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */,
 				D98DF41523267626003F376A /* CalendarCellViewController.swift in Sources */,
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
@@ -598,6 +660,7 @@
 				D9A7A34C232B6CF2002F410C /* NotificationModel.swift in Sources */,
 				D9A7A340232B6845002F410C /* LiveScheduleCellViewController.swift in Sources */,
 				D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */,
+				D94A2161232B8106000D4071 /* SigninViewController.swift in Sources */,
 				D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */,
 				D98DF3F92325239A003F376A /* MusicViewController.swift in Sources */,
 				D98DF4062325CA30003F376A /* MusicCellViewController.swift in Sources */,
@@ -606,6 +669,7 @@
 				D9A7A348232B6CCF002F410C /* ArtistModel.swift in Sources */,
 				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,
+				D94A2170232B8500000D4071 /* LoginViewController.swift in Sources */,
 				D98DF42E232693D3003F376A /* NotificationCellViewController.swift in Sources */,
 				D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */,
 				D98DF3FD232523F5003F376A /* LiveViewController.swift in Sources */,
