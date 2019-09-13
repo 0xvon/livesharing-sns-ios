@@ -52,6 +52,8 @@
 		D98DF436232B218E003F376A /* LiveSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF435232B218E003F376A /* LiveSchedule.storyboard */; };
 		D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */; };
 		D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF439232B2221003F376A /* FavoriteArtists.storyboard */; };
+		D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF43C232B4E84003F376A /* FavoriteArtistCellViewController.swift */; };
+		D98DF43F232B4EAC003F376A /* FavoriteArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		D98DF435232B218E003F376A /* LiveSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveSchedule.storyboard; sourceTree = "<group>"; };
 		D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArtistsViewController.swift; sourceTree = "<group>"; };
 		D98DF439232B2221003F376A /* FavoriteArtists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteArtists.storyboard; sourceTree = "<group>"; };
+		D98DF43C232B4E84003F376A /* FavoriteArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArtistCellViewController.swift; sourceTree = "<group>"; };
+		D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteArtistCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,10 +358,20 @@
 		D98DF432232B2142003F376A /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF43B232B4E6D003F376A /* FavoriteArtistCell */,
 				D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */,
 				D98DF439232B2221003F376A /* FavoriteArtists.storyboard */,
 			);
 			path = FavoriteArtists;
+			sourceTree = "<group>";
+		};
+		D98DF43B232B4E6D003F376A /* FavoriteArtistCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF43C232B4E84003F376A /* FavoriteArtistCellViewController.swift */,
+				D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */,
+			);
+			path = FavoriteArtistCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +454,7 @@
 				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
 				D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */,
 				D98DF4122326665A003F376A /* RegisterArtist.storyboard in Resources */,
+				D98DF43F232B4EAC003F376A /* FavoriteArtistCell.xib in Resources */,
 				D98DF436232B218E003F376A /* LiveSchedule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +478,7 @@
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
 				D98DF42423268402003F376A /* CommentViewController.swift in Sources */,
 				D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */,
+				D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */,
 				D98DF3F92325239A003F376A /* MusicViewController.swift in Sources */,
 				D98DF4062325CA30003F376A /* MusicCellViewController.swift in Sources */,
 				D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */,
