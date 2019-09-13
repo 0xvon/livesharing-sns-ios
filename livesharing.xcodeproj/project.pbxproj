@@ -54,6 +54,8 @@
 		D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF439232B2221003F376A /* FavoriteArtists.storyboard */; };
 		D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF43C232B4E84003F376A /* FavoriteArtistCellViewController.swift */; };
 		D98DF43F232B4EAC003F376A /* FavoriteArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */; };
+		D9A7A340232B6845002F410C /* LiveScheduleCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7A33F232B6845002F410C /* LiveScheduleCellViewController.swift */; };
+		D9A7A342232B6868002F410C /* LiveScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A7A341232B6868002F410C /* LiveScheduleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,8 @@
 		D98DF439232B2221003F376A /* FavoriteArtists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteArtists.storyboard; sourceTree = "<group>"; };
 		D98DF43C232B4E84003F376A /* FavoriteArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteArtistCell.xib; sourceTree = "<group>"; };
+		D9A7A33F232B6845002F410C /* LiveScheduleCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScheduleCellViewController.swift; sourceTree = "<group>"; };
+		D9A7A341232B6868002F410C /* LiveScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveScheduleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +353,7 @@
 		D98DF431232B2131003F376A /* LiveSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				D9A7A33E232B6823002F410C /* LiveScheduleCell */,
 				D98DF433232B215D003F376A /* LiveScheduleViewController.swift */,
 				D98DF435232B218E003F376A /* LiveSchedule.storyboard */,
 			);
@@ -372,6 +377,15 @@
 				D98DF43E232B4EAC003F376A /* FavoriteArtistCell.xib */,
 			);
 			path = FavoriteArtistCell;
+			sourceTree = "<group>";
+		};
+		D9A7A33E232B6823002F410C /* LiveScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9A7A33F232B6845002F410C /* LiveScheduleCellViewController.swift */,
+				D9A7A341232B6868002F410C /* LiveScheduleCell.xib */,
+			);
+			path = LiveScheduleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +449,7 @@
 				D98DF421232683D0003F376A /* Info.storyboard in Resources */,
 				D92D196A231B84EF00D82662 /* LaunchScreen.storyboard in Resources */,
 				D92D197E231B879D00D82662 /* MyPage.storyboard in Resources */,
+				D9A7A342232B6868002F410C /* LiveScheduleCell.xib in Resources */,
 				D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */,
 				D98DF3FF23252413003F376A /* Live.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
@@ -477,6 +492,7 @@
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
 				D98DF42423268402003F376A /* CommentViewController.swift in Sources */,
+				D9A7A340232B6845002F410C /* LiveScheduleCellViewController.swift in Sources */,
 				D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */,
 				D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */,
 				D98DF3F92325239A003F376A /* MusicViewController.swift in Sources */,

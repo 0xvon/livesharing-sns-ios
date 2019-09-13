@@ -18,21 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="live schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMp-RI-71k">
-                                <rect key="frame" x="157" y="438" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gmn-Xl-1Dh">
+                                <rect key="frame" x="0.0" y="97" width="414" height="703"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ライブ参戦予定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymy-lt-z7j">
+                                <rect key="frame" x="16" y="60" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-kj-MYX">
+                                <rect key="frame" x="334" y="816" width="64" height="30"/>
+                                <state key="normal" title="see more"/>
+                                <connections>
+                                    <action selector="liveScheduleSeeMoreButtonTapped:" destination="QKa-zK-4fN" eventType="touchUpInside" id="be1-ee-6ZX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w7N-kj-MYX" firstAttribute="top" secondItem="gmn-Xl-1Dh" secondAttribute="bottom" constant="16" id="MXM-fJ-Qv2"/>
+                            <constraint firstItem="920-bC-eyw" firstAttribute="bottom" secondItem="w7N-kj-MYX" secondAttribute="bottom" constant="16" id="VNk-qg-eIt"/>
+                            <constraint firstItem="gmn-Xl-1Dh" firstAttribute="top" secondItem="Ymy-lt-z7j" secondAttribute="bottom" constant="16" id="WcB-qw-LdV"/>
+                            <constraint firstItem="Ymy-lt-z7j" firstAttribute="leading" secondItem="920-bC-eyw" secondAttribute="leading" constant="16" id="ZBR-gS-yar"/>
+                            <constraint firstItem="Ymy-lt-z7j" firstAttribute="top" secondItem="920-bC-eyw" secondAttribute="top" constant="16" id="hXq-9n-dQb"/>
+                            <constraint firstItem="920-bC-eyw" firstAttribute="trailing" secondItem="w7N-kj-MYX" secondAttribute="trailing" constant="16" id="lQr-JD-12R"/>
+                            <constraint firstItem="920-bC-eyw" firstAttribute="trailing" secondItem="gmn-Xl-1Dh" secondAttribute="trailing" id="piS-CP-CpY"/>
+                            <constraint firstItem="gmn-Xl-1Dh" firstAttribute="leading" secondItem="920-bC-eyw" secondAttribute="leading" id="tjP-pD-tLc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="920-bC-eyw"/>
                     </view>
+                    <connections>
+                        <outlet property="liveScheduleSeeMoreButton" destination="w7N-kj-MYX" id="6cD-bN-rNE"/>
+                        <outlet property="liveScheduleTableView" destination="gmn-Xl-1Dh" id="gvi-TL-dOi"/>
+                        <outlet property="liveScheduleTitle" destination="Ymy-lt-z7j" id="TUy-qh-bzI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMI-Pl-li8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="145"/>
+            <point key="canvasLocation" x="-1.4492753623188408" y="144.64285714285714"/>
         </scene>
     </scenes>
 </document>

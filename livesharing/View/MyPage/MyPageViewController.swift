@@ -19,6 +19,7 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var followerButton: UIButton!
     @IBOutlet weak var biography: UITextView!
     @IBOutlet weak var joinedLiveButton: UIButton!
+    @IBOutlet weak var biographyWidthConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +34,6 @@ class MyPageViewController: UIViewController {
         followerButton.setTitle("400 フォロワー", for: .normal)
         joinedLiveButton.setTitle("100 ライブ参戦", for: .normal)
         biography.text = "東京の人。MY FIRST STORYが大好き。大学生。このアプリの開発者。"
+        biographyWidthConstraint.constant = self.view.bounds.width - 32
     }
 }
