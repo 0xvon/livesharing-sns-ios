@@ -1,0 +1,6 @@
+framework module Pods_livesharing {
+  umbrella header "Pods-livesharing-umbrella.h"
+
+  export *
+  module * { export * }
+}
