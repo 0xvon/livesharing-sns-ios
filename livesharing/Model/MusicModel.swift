@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import Firebase
 
 struct MusicModel {
     var title: String
     var album: String
-    var releaseDate: Date
+    var releaseDate: Timestamp
     var url: URL
     var isFavorite: Bool
 }

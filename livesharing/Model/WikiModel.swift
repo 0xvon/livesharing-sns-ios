@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct WikiModel {
+    let id: String
     var manar: [String]
     var mc: [String]
 }

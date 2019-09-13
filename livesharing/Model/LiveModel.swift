@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import Firebase
 
 struct LiveModel {
-    var title: String
-    var artist: ArtistModel
+    let id: String
+    let title: String
+    let artist: ArtistModel
     var setlist: [MusicModel]
-    var place: String
-    var date: Date
-    var startTime: TimeZone
-    var endTime: TimeZone
+    let place: String
+    let startTime: Timestamp
+    let endTime: Timestamp
     var isJoin: Bool
 }

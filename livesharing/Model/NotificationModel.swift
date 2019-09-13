@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Firebase
 
 struct NotificationModel {
     let notificationType: NotificationType
-    let createTime: TimeZone
+    let createdAt: Timestamp
     var isRead: Bool
 }
 

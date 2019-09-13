@@ -7,13 +7,22 @@
 //
 
 import Foundation
-import UIKit
+import Firebase
 
 struct ArtistModel {
-    var id: Int
+    var id: String
     var bandName: String
-    var member: Dictionary<String, String>
-    var music: MusicModel
+    var createdAt: Timestamp
+    var member: Dictionary<[Part], String>
+    var music: [MusicModel]
     var wiki: WikiModel
     var isFavorite: Bool
+}
+
+enum Part {
+    case Bo
+    case Ba
+    case Gt
+    case Dr
+    case Key
 }

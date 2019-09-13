@@ -11,6 +11,7 @@ import UIKit
 
 
 struct UserModel {
+    let id: String
     var displayName: String
     var username: String
     var avator: URL
