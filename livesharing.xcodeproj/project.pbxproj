@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		D92D1980231B87A700D82662 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D197F231B87A700D82662 /* MyPageViewController.swift */; };
 		D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D1981231B881300D82662 /* NotificationViewController.swift */; };
 		D92D1984231B883800D82662 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D1983231B883800D82662 /* Notification.storyboard */; };
+		D94A215E232B7F49000D4071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94A215D232B7F49000D4071 /* GoogleService-Info.plist */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
@@ -82,6 +83,7 @@
 		D92D197F231B87A700D82662 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		D92D1981231B881300D82662 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D92D1983231B883800D82662 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		D94A215D232B7F49000D4071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -146,7 +148,6 @@
 				2FB3ACBD57BA3DDC39F171A8 /* Pods-livesharing.debug.xcconfig */,
 				5B2B72A6E553890F0B5C9D23 /* Pods-livesharing.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,6 +183,7 @@
 				D92D1989231B941D00D82662 /* View */,
 				D92D1988231B940C00D82662 /* Model */,
 				D92D196B231B84EF00D82662 /* Info.plist */,
+				D94A215D232B7F49000D4071 /* GoogleService-Info.plist */,
 				D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */,
 			);
 			path = livesharing;
@@ -512,6 +514,7 @@
 				D92D1965231B84EE00D82662 /* Main.storyboard in Resources */,
 				D98DF4082325CA53003F376A /* MusicCell.xib in Resources */,
 				D98DF3FB232523BB003F376A /* Music.storyboard in Resources */,
+				D94A215E232B7F49000D4071 /* GoogleService-Info.plist in Resources */,
 				D98DF430232693FC003F376A /* NotificationCell.xib in Resources */,
 				D98DF40B2325D7F2003F376A /* LiveCell.xib in Resources */,
 				D92D197C231B86E800D82662 /* Calendar.storyboard in Resources */,
