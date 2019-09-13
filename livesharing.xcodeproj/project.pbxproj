@@ -48,6 +48,10 @@
 		D98DF42B2326876F003F376A /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF42A2326876F003F376A /* CommentCell.xib */; };
 		D98DF42E232693D3003F376A /* NotificationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF42D232693D3003F376A /* NotificationCellViewController.swift */; };
 		D98DF430232693FC003F376A /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF42F232693FC003F376A /* NotificationCell.xib */; };
+		D98DF434232B215D003F376A /* LiveScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF433232B215D003F376A /* LiveScheduleViewController.swift */; };
+		D98DF436232B218E003F376A /* LiveSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF435232B218E003F376A /* LiveSchedule.storyboard */; };
+		D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */; };
+		D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF439232B2221003F376A /* FavoriteArtists.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +98,10 @@
 		D98DF42A2326876F003F376A /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D98DF42D232693D3003F376A /* NotificationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewController.swift; sourceTree = "<group>"; };
 		D98DF42F232693FC003F376A /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		D98DF433232B215D003F376A /* LiveScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScheduleViewController.swift; sourceTree = "<group>"; };
+		D98DF435232B218E003F376A /* LiveSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveSchedule.storyboard; sourceTree = "<group>"; };
+		D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArtistsViewController.swift; sourceTree = "<group>"; };
+		D98DF439232B2221003F376A /* FavoriteArtists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteArtists.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,8 @@
 		D92D1973231B852100D82662 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				D98DF432232B2142003F376A /* FavoriteArtists */,
+				D98DF431232B2131003F376A /* LiveSchedule */,
 				D92D197F231B87A700D82662 /* MyPageViewController.swift */,
 				D92D197D231B879D00D82662 /* MyPage.storyboard */,
 			);
@@ -332,6 +342,24 @@
 			path = NotificationCell;
 			sourceTree = "<group>";
 		};
+		D98DF431232B2131003F376A /* LiveSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF433232B215D003F376A /* LiveScheduleViewController.swift */,
+				D98DF435232B218E003F376A /* LiveSchedule.storyboard */,
+			);
+			path = LiveSchedule;
+			sourceTree = "<group>";
+		};
+		D98DF432232B2142003F376A /* FavoriteArtists */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF437232B21F4003F376A /* FavoriteArtistsViewController.swift */,
+				D98DF439232B2221003F376A /* FavoriteArtists.storyboard */,
+			);
+			path = FavoriteArtists;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,6 +421,7 @@
 				D98DF421232683D0003F376A /* Info.storyboard in Resources */,
 				D92D196A231B84EF00D82662 /* LaunchScreen.storyboard in Resources */,
 				D92D197E231B879D00D82662 /* MyPage.storyboard in Resources */,
+				D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */,
 				D98DF3FF23252413003F376A /* Live.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
 				D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */,
@@ -411,6 +440,7 @@
 				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
 				D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */,
 				D98DF4122326665A003F376A /* RegisterArtist.storyboard in Resources */,
+				D98DF436232B218E003F376A /* LiveSchedule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +454,9 @@
 				D92D1982231B881300D82662 /* NotificationViewController.swift in Sources */,
 				D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */,
 				D98DF4012325243D003F376A /* ArtistWikiViewController.swift in Sources */,
+				D98DF434232B215D003F376A /* LiveScheduleViewController.swift in Sources */,
 				D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */,
+				D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */,
 				D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */,
 				D98DF41523267626003F376A /* CalendarCellViewController.swift in Sources */,
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
