@@ -22,7 +22,9 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         auth = Auth.auth()
-        let user = auth.currentUser!
+        guard let user: User = auth.currentUser else {
+            return
+        }
         account = AccountModel(data: ["id": user.providerID])
         
         narrowButton.setTitle("絞り込み", for: .normal)

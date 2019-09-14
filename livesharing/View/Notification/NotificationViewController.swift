@@ -8,12 +8,22 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class NotififcationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var auth: Auth!
+    var account: AccountModel!
+    var notification: NotificationModel!
     
     @IBOutlet weak var notificationTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        auth = Auth.auth()
+        guard let user: User = auth.currentUser else {
+            return
+        }
+        account = AccountModel(data: ["id": user.providerID])
         
         notificationTableView.delegate = self
         notificationTableView.dataSource = self

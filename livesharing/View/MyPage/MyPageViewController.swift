@@ -30,7 +30,9 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
         
         auth = Auth.auth()
-        let user = auth.currentUser!
+        guard let user: User = auth.currentUser else {
+            return
+        }
         account = AccountModel(data: ["id": user.providerID])
         
         userImageLabel.image = UIImage(named: "avator")
