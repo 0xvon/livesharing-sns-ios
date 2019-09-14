@@ -18,24 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-oI-x4e">
-                                <rect key="frame" x="219" y="403" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="メールアドレスで登録"/>
-                                <connections>
-                                    <action selector="mailButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="yMO-D3-1cv"/>
-                                    <segue destination="sIT-Il-vsu" kind="push" id="gBx-NG-qi0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXD-NN-Gxa">
-                                <rect key="frame" x="51" y="403" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="電話番号で登録"/>
-                                <connections>
-                                    <action selector="phoneButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="Dsr-Mk-tW4"/>
-                                    <segue destination="a5u-0a-C6e" kind="push" id="CKp-Jw-hya"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-xb-GQS">
                                 <rect key="frame" x="51" y="457" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,6 +57,15 @@
                                     <segue destination="sNt-7m-rve" kind="push" id="6us-W6-BH8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-oI-x4e">
+                                <rect key="frame" x="131" y="403" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="メールアドレスで登録"/>
+                                <connections>
+                                    <action selector="mailButtonTapped:" destination="Ztn-Ms-L2q" eventType="touchUpInside" id="yMO-D3-1cv"/>
+                                    <segue destination="sIT-Il-vsu" kind="push" id="gBx-NG-qi0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cHu-TJ-RVO"/>
@@ -83,12 +74,13 @@
                         <outlet property="googleButton" destination="1et-xb-GQS" id="IQl-GJ-5zJ"/>
                         <outlet property="loginButton" destination="xXh-ik-nuP" id="hla-oC-nvl"/>
                         <outlet property="mailButton" destination="Unm-oI-x4e" id="MOR-ee-4lg"/>
-                        <outlet property="phoneButton" destination="aXD-NN-Gxa" id="kzA-0I-8Bh"/>
                         <outlet property="twitterButton" destination="Ipm-0T-0BU" id="65k-Tv-9Cf"/>
+                        <segue destination="n9E-hD-oXD" kind="presentation" identifier="toCalendar" id="cUu-Lp-Jkp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJI-4X-pHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="3"/>
         </scene>
         <!--SigninWithMailaddredd-->
         <scene sceneID="18q-Gb-OC6">
@@ -100,15 +92,13 @@
             </objects>
             <point key="canvasLocation" x="643" y="21"/>
         </scene>
-        <!--SigninWithPhoneNumber-->
-        <scene sceneID="ulH-FM-WAk">
+        <!--Main-->
+        <scene sceneID="qhn-Ms-ZPD">
             <objects>
-                <viewControllerPlaceholder storyboardName="SigninWithPhoneNumber" id="a5u-0a-C6e" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="QZk-3z-3PF"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nhM-hy-Mod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" id="n9E-hD-oXD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5g-Oe-3fZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="-87"/>
+            <point key="canvasLocation" x="1062" y="-249"/>
         </scene>
         <!--Login-->
         <scene sceneID="LVr-3w-E0k">

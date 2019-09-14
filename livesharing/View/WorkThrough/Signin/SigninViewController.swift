@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
+import Firebase
+
 
 class SigninViewController: UIViewController {
+    
+    var auth: Auth!
     
     @IBOutlet weak var phoneButton: UIButton!
     @IBOutlet weak var mailButton: UIButton!
@@ -18,6 +22,17 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        auth = Auth.auth()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if auth.currentUser != nil {
+            performSegue(withIdentifier: "toCalendar", sender: auth.currentUser!)
+        }
+        
     }
     
     @IBAction func phoneButtonTapped(_ sender: Any) {

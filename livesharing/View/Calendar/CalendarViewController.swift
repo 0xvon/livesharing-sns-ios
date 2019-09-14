@@ -8,15 +8,22 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 
 class CalendarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var account: AccountModel!
+    var auth: Auth!
     
     @IBOutlet weak var calendarTableView: UITableView!
     @IBOutlet weak var narrowButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        auth = Auth.auth()
+        let user = auth.currentUser!
+        account = AccountModel(data: ["id": user.providerID])
         
         narrowButton.setTitle("絞り込み", for: .normal)
         narrowButton.tintColor = .blue
