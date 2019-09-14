@@ -27,6 +27,10 @@
 		D94A2172232B851C000D4071 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A2171232B851C000D4071 /* Login.storyboard */; };
 		D94A2174232B88EC000D4071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94A2173232B88EC000D4071 /* GoogleService-Info.plist */; };
 		D94A2176232B9206000D4071 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A2175232B9206000D4071 /* AccountModel.swift */; };
+		D94A217B232C9539000D4071 /* UserAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A217A232C9539000D4071 /* UserAPIRequest.swift */; };
+		D94A217D232C9544000D4071 /* ArtistAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A217C232C9544000D4071 /* ArtistAPIRequest.swift */; };
+		D94A217F232C9550000D4071 /* LiveAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A217E232C9550000D4071 /* LiveAPIRequest.swift */; };
+		D94A2181232C9562000D4071 /* NotificationAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
@@ -98,6 +102,10 @@
 		D94A2171232B851C000D4071 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D94A2173232B88EC000D4071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D94A2175232B9206000D4071 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		D94A217A232C9539000D4071 /* UserAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIRequest.swift; sourceTree = "<group>"; };
+		D94A217C232C9544000D4071 /* ArtistAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAPIRequest.swift; sourceTree = "<group>"; };
+		D94A217E232C9550000D4071 /* LiveAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAPIRequest.swift; sourceTree = "<group>"; };
+		D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPIRequest.swift; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 			children = (
 				D92D1989231B941D00D82662 /* View */,
 				D92D1988231B940C00D82662 /* Model */,
+				D94A2179232C94FC000D4071 /* APIRequest */,
 				D92D196B231B84EF00D82662 /* Info.plist */,
 				D94A2173232B88EC000D4071 /* GoogleService-Info.plist */,
 				D92D1968231B84EF00D82662 /* LaunchScreen.storyboard */,
@@ -304,6 +313,17 @@
 				D94A216D232B8491000D4071 /* SigninWithMailaddredd.storyboard */,
 			);
 			path = SigninWithMailaddress;
+			sourceTree = "<group>";
+		};
+		D94A2179232C94FC000D4071 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D94A217A232C9539000D4071 /* UserAPIRequest.swift */,
+				D94A217C232C9544000D4071 /* ArtistAPIRequest.swift */,
+				D94A217E232C9550000D4071 /* LiveAPIRequest.swift */,
+				D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */,
+			);
+			path = APIRequest;
 			sourceTree = "<group>";
 		};
 		D98DF3E623222746003F376A /* ArtistsCell */ = {
@@ -633,8 +653,10 @@
 				D9A7A34A232B6CDA002F410C /* MusicModel.swift in Sources */,
 				D92D197A231B86DE00D82662 /* CalendarViewController.swift in Sources */,
 				D98DF4012325243D003F376A /* ArtistWikiViewController.swift in Sources */,
+				D94A217B232C9539000D4071 /* UserAPIRequest.swift in Sources */,
 				D9A7A34E232B6DC7002F410C /* WikiModel.swift in Sources */,
 				D98DF434232B215D003F376A /* LiveScheduleViewController.swift in Sources */,
+				D94A217F232C9550000D4071 /* LiveAPIRequest.swift in Sources */,
 				D9A7A350232B70A3002F410C /* CommentModel.swift in Sources */,
 				D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */,
 				D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */,
@@ -646,6 +668,7 @@
 				D98DF42423268402003F376A /* CommentViewController.swift in Sources */,
 				D9A7A34C232B6CF2002F410C /* NotificationModel.swift in Sources */,
 				D9A7A340232B6845002F410C /* LiveScheduleCellViewController.swift in Sources */,
+				D94A2181232C9562000D4071 /* NotificationAPIRequest.swift in Sources */,
 				D98DF41F232683B2003F376A /* InfoViewController.swift in Sources */,
 				D94A2161232B8106000D4071 /* SigninViewController.swift in Sources */,
 				D98DF43D232B4E84003F376A /* FavoriteArtistCellViewController.swift in Sources */,
@@ -657,6 +680,7 @@
 				D98DF40D2325D7FE003F376A /* LiveCellViewController.swift in Sources */,
 				D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */,
 				D94A2176232B9206000D4071 /* AccountModel.swift in Sources */,
+				D94A217D232C9544000D4071 /* ArtistAPIRequest.swift in Sources */,
 				D94A2170232B8500000D4071 /* LoginViewController.swift in Sources */,
 				D98DF42E232693D3003F376A /* NotificationCellViewController.swift in Sources */,
 				D98DF42923268751003F376A /* CommentCellViewController.swift in Sources */,
