@@ -24,6 +24,28 @@ struct ArtistAPIRequest {
         }
     }
     
+    func getArtistMusics(id: String) {
+        let db = Firestore.firestore()
+        db.collection("musics").whereField("artistId", isEqualTo: id).getDocuments() { (snaps, error) in
+            if let error = error {
+                print("\(error)")
+            } else {
+                return
+            }
+        }
+    }
+    
+    func getMusic(id: String) {
+        let db = Firestore.firestore()
+        db.collection("musics").document(id).getDocument() { (snap, error) in
+            if let error = error {
+                print("\(error)")
+            } else {
+                return
+            }
+        }
+    }
+    
     func getArtists() {
         let db = Firestore.firestore()
         db.collection("artists").getDocuments() { (snaps, error) in
@@ -58,7 +80,7 @@ struct ArtistAPIRequest {
         }
     }
     
-    func unfavorite() {
+    func unfavorite(id: String) {
         let db = Firestore.firestore()
         db.collection("artists").document(id).updateData(["isFavorite": false]) { error in
             if let error = error {
