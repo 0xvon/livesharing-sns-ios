@@ -20,4 +20,12 @@ struct UserModel {
     var liveSchedule: [LiveModel]
     var isFollowing: Bool
     var isFollower: Bool
+    
+//    init(data: Dictionary<String, Any>) {
+//        self.id = data["id"] as! String
+//        self.displayName = data["displayName"] as! String
+//        self.username = data["username"] as! String
+//        self.avator = data["avator"] as! URL
+//        self.biography = data["biography"] as! String
+//    }
 }
