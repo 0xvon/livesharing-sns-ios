@@ -11,13 +11,17 @@ import UIKit
 import Firebase
 
 
-class CalendarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CalendarViewController: UIViewController, UIScrollViewDelegate {
     
     var account: AccountModel!
     var auth: Auth!
     
-    @IBOutlet weak var calendarTableView: UITableView!
+    let display: CGRect = UIScreen.main.bounds
     @IBOutlet weak var narrowButton: UIButton!
+    @IBOutlet weak var dateButton: UIButton!
+    @IBOutlet weak var mapButton: UIButton!
+    @IBOutlet weak var viewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var horizontalScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,40 +33,36 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         narrowButton.setTitle("絞り込み", for: .normal)
         narrowButton.tintColor = .blue
+        horizontalScrollView.delegate = self
+        horizontalScrollView.contentOffset.x = 0
+        viewWidthConstraint.constant = display.size.width * 2
+        dateButton.tintColor = .red
+        mapButton.tintColor = .gray
         
-        calendarTableView.delegate = self
-        calendarTableView.dataSource = self
-        calendarTableView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellReuseIdentifier: "CalendarCell")
-    }
-}
-
-extension CalendarViewController {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = calendarTableView.dequeueReusableCell(withIdentifier: "CalendarCell", for: indexPath) as! CalendarCellViewController
-        return cell
+    @IBAction func dateButtonTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 0
+        dateButton.tintColor = .red
+        mapButton.tintColor = .gray
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 20
+    @IBAction func mapButtonTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 414
+        dateButton.tintColor = .gray
+        mapButton.tintColor = .red
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        label.text = "8月21日"
-        return label
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == horizontalScrollView {
+            print(scrollView.contentOffset.x)
+            if scrollView.contentOffset.x < 207 {
+                dateButton.tintColor = .red
+                mapButton.tintColor = .gray
+            } else {
+                dateButton.tintColor = .gray
+                mapButton.tintColor = .red
+            }
+        }
     }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toLivePage", sender: nil)
-    }
-    
 }

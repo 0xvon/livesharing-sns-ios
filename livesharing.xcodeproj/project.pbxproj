@@ -31,6 +31,10 @@
 		D94A217D232C9544000D4071 /* ArtistAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A217C232C9544000D4071 /* ArtistAPIRequest.swift */; };
 		D94A217F232C9550000D4071 /* LiveAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A217E232C9550000D4071 /* LiveAPIRequest.swift */; };
 		D94A2181232C9562000D4071 /* NotificationAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */; };
+		D9514CD92330BA4E001BED00 /* LiveDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9514CD82330BA4E001BED00 /* LiveDateViewController.swift */; };
+		D9514CDB2330BA7F001BED00 /* LiveDate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9514CDA2330BA7F001BED00 /* LiveDate.storyboard */; };
+		D9514CDD2330BBFC001BED00 /* LiveMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9514CDC2330BBFC001BED00 /* LiveMapViewController.swift */; };
+		D9514CDF2330BC1B001BED00 /* LiveMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9514CDE2330BC1B001BED00 /* LiveMap.storyboard */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
@@ -106,6 +110,10 @@
 		D94A217C232C9544000D4071 /* ArtistAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAPIRequest.swift; sourceTree = "<group>"; };
 		D94A217E232C9550000D4071 /* LiveAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAPIRequest.swift; sourceTree = "<group>"; };
 		D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPIRequest.swift; sourceTree = "<group>"; };
+		D9514CD82330BA4E001BED00 /* LiveDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDateViewController.swift; sourceTree = "<group>"; };
+		D9514CDA2330BA7F001BED00 /* LiveDate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveDate.storyboard; sourceTree = "<group>"; };
+		D9514CDC2330BBFC001BED00 /* LiveMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMapViewController.swift; sourceTree = "<group>"; };
+		D9514CDE2330BC1B001BED00 /* LiveMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveMap.storyboard; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -215,8 +223,9 @@
 		D92D1971231B84FC00D82662 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				D9514CD62330BA19001BED00 /* LiveDate */,
+				D9514CD72330BA30001BED00 /* LiveMap */,
 				D98DF41823267D05003F376A /* LivePage */,
-				D98DF4132326761B003F376A /* CalendarCell */,
 				D92D1979231B86DE00D82662 /* CalendarViewController.swift */,
 				D92D197B231B86E800D82662 /* Calendar.storyboard */,
 			);
@@ -324,6 +333,25 @@
 				D94A2180232C9562000D4071 /* NotificationAPIRequest.swift */,
 			);
 			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		D9514CD62330BA19001BED00 /* LiveDate */ = {
+			isa = PBXGroup;
+			children = (
+				D98DF4132326761B003F376A /* CalendarCell */,
+				D9514CD82330BA4E001BED00 /* LiveDateViewController.swift */,
+				D9514CDA2330BA7F001BED00 /* LiveDate.storyboard */,
+			);
+			path = LiveDate;
+			sourceTree = "<group>";
+		};
+		D9514CD72330BA30001BED00 /* LiveMap */ = {
+			isa = PBXGroup;
+			children = (
+				D9514CDC2330BBFC001BED00 /* LiveMapViewController.swift */,
+				D9514CDE2330BC1B001BED00 /* LiveMap.storyboard */,
+			);
+			path = LiveMap;
 			sourceTree = "<group>";
 		};
 		D98DF3E623222746003F376A /* ArtistsCell */ = {
@@ -572,7 +600,9 @@
 				D9A7A342232B6868002F410C /* LiveScheduleCell.xib in Resources */,
 				D98DF43A232B2221003F376A /* FavoriteArtists.storyboard in Resources */,
 				D98DF3FF23252413003F376A /* Live.storyboard in Resources */,
+				D9514CDB2330BA7F001BED00 /* LiveDate.storyboard in Resources */,
 				D94A2163232B8141000D4071 /* Signin.storyboard in Resources */,
+				D9514CDF2330BC1B001BED00 /* LiveMap.storyboard in Resources */,
 				D92D1967231B84EF00D82662 /* Assets.xcassets in Resources */,
 				D94A2172232B851C000D4071 /* Login.storyboard in Resources */,
 				D98DF3F22322AE4E003F376A /* ArtistPage.storyboard in Resources */,
@@ -658,10 +688,12 @@
 				D98DF434232B215D003F376A /* LiveScheduleViewController.swift in Sources */,
 				D94A217F232C9550000D4071 /* LiveAPIRequest.swift in Sources */,
 				D9A7A350232B70A3002F410C /* CommentModel.swift in Sources */,
+				D9514CDD2330BBFC001BED00 /* LiveMapViewController.swift in Sources */,
 				D98DF41A23267D14003F376A /* LivePageViewController.swift in Sources */,
 				D98DF438232B21F4003F376A /* FavoriteArtistsViewController.swift in Sources */,
 				D98DF3F42322AE80003F376A /* ArtistPageViewController.swift in Sources */,
 				D98DF41523267626003F376A /* CalendarCellViewController.swift in Sources */,
+				D9514CD92330BA4E001BED00 /* LiveDateViewController.swift in Sources */,
 				D92D195E231B84EE00D82662 /* AppDelegate.swift in Sources */,
 				D92D1976231B85D800D82662 /* ArtistsViewController.swift in Sources */,
 				D9A7A344232B6CBF002F410C /* UserModel.swift in Sources */,
