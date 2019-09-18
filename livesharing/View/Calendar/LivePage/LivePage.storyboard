@@ -50,21 +50,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91v-oL-bJx">
-                                                <rect key="frame" x="0.0" y="35" width="240" height="5"/>
-                                                <color key="backgroundColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="5" id="pIA-G6-yHF"/>
-                                                    <constraint firstAttribute="width" constant="240" id="tWq-fa-885"/>
-                                                </constraints>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="91v-oL-bJx" secondAttribute="bottom" id="1Ax-hx-vuv"/>
                                             <constraint firstItem="kDy-wf-FKj" firstAttribute="top" secondItem="khZ-O7-nJ5" secondAttribute="top" id="Bfq-1h-eq7"/>
                                             <constraint firstAttribute="bottom" secondItem="kDy-wf-FKj" secondAttribute="bottom" id="I3f-DV-BQO"/>
-                                            <constraint firstItem="91v-oL-bJx" firstAttribute="leading" secondItem="khZ-O7-nJ5" secondAttribute="leading" id="LrM-Kc-sMM"/>
                                             <constraint firstItem="kDy-wf-FKj" firstAttribute="leading" secondItem="khZ-O7-nJ5" secondAttribute="leading" id="VL5-rs-85l"/>
                                             <constraint firstAttribute="trailing" secondItem="kDy-wf-FKj" secondAttribute="trailing" id="r1f-Us-JDw"/>
                                             <constraint firstAttribute="height" constant="40" id="wa2-Kf-NvT"/>
@@ -196,9 +186,6 @@
                         <outlet property="setListContainerView" destination="EUb-MZ-x01" id="YxI-jL-B9o"/>
                         <outlet property="setlistTabButton" destination="5SN-67-QfM" id="bpk-Mt-Pe7"/>
                         <outlet property="tourName" destination="eyS-yC-qFu" id="9nj-KR-mOe"/>
-                        <outlet property="underLineLeftConstraint" destination="LrM-Kc-sMM" id="qQX-Bg-QZg"/>
-                        <outlet property="underLineView" destination="91v-oL-bJx" id="rA5-w0-34d"/>
-                        <outlet property="underLineWidthConstraint" destination="tWq-fa-885" id="RHy-5B-DDM"/>
                         <outlet property="viewWidthConstraint" destination="G2r-SE-qhF" id="IP9-8P-Y2B"/>
                     </connections>
                 </viewController>

@@ -19,9 +19,6 @@ class LivePageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var infoTabButton: UIButton!
     @IBOutlet weak var setlistTabButton: UIButton!
     @IBOutlet weak var commentTabButton: UIButton!
-    @IBOutlet weak var underLineView: UIView!
-    @IBOutlet weak var underLineWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var underLineLeftConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var horizontalScrollView: UIScrollView!
     @IBOutlet weak var viewWidthConstraint: NSLayoutConstraint!
@@ -38,9 +35,8 @@ class LivePageViewController: UIViewController, UIScrollViewDelegate {
         dateLabel.tintColor = .gray
         tourName.text = "MY FIRST STORY TOUR 2019"
         liveImage.image = UIImage(named: "myfirststory")
-        
         viewWidthConstraint.constant = display.size.width * 3
-        underLineWidthConstraint.constant = display.size.width / 3
+        tabButton()
     }
     
     func tabButton() {
@@ -61,25 +57,21 @@ class LivePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func infoTabButtonTapped(_ sender: Any) {
         horizontalScrollView.contentOffset.x = 0
-        underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
     }
     
     @IBAction func setlistTabButtonTapped(_ sender: Any) {
         horizontalScrollView.contentOffset.x = 414
-        underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
     }
     
     @IBAction func commentTabButtonTapped(_ sender: Any) {
         horizontalScrollView.contentOffset.x = 828
-        underLineLeftConstraint.constant = horizontalScrollView.contentOffset.x / 3
         tabButton()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == self.horizontalScrollView {
-            underLineLeftConstraint.constant = scrollView.contentOffset.x / 3
             tabButton()
         } else {
             headerTopConstraint.constant = max(-(scrollView.contentOffset.y), +50)
