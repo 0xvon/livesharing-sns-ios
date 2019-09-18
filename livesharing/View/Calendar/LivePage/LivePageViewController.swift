@@ -15,8 +15,6 @@ class LivePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tourName: UILabel!
-    @IBOutlet weak var bandName: UILabel!
-    @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var liveImage: UIImageView!
     @IBOutlet weak var infoTabButton: UIButton!
     @IBOutlet weak var setlistTabButton: UIButton!
@@ -39,9 +37,6 @@ class LivePageViewController: UIViewController, UIScrollViewDelegate {
         dateLabel.text = "2019/08/21"
         dateLabel.tintColor = .gray
         tourName.text = "MY FIRST STORY TOUR 2019"
-        bandName.text = "MY FIRST STORY"
-        placeLabel.text = "Zepp Tokyo"
-        placeLabel.tintColor = .gray
         liveImage.image = UIImage(named: "myfirststory")
         
         viewWidthConstraint.constant = display.size.width * 3
