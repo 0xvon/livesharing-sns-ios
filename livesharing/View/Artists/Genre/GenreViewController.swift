@@ -17,6 +17,10 @@ class GenreViewController: UIViewController {
         genreCollectionView.delegate = self
         genreCollectionView.dataSource = self
         genreCollectionView.register(UINib(nibName: "GenreCell", bundle: nil), forCellWithReuseIdentifier: "GenreCell")
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.width / 2 - 15, height: self.view.bounds.width / 2 - 15)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        genreCollectionView.collectionViewLayout = layout
     }
 }
 

@@ -22,6 +22,10 @@ class RecommendArtistViewController: UIViewController {
         recommendArtistCollectionView.delegate = self
         recommendArtistCollectionView.dataSource = self
         recommendArtistCollectionView.register(UINib(nibName: "RecommendArtistCell", bundle: nil), forCellWithReuseIdentifier: "RecommendArtistCell")
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.width / 4 - 10, height: self.view.bounds.width / 4 - 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        recommendArtistCollectionView.collectionViewLayout = layout
         
         topicTableView.delegate = self
         topicTableView.dataSource = self
