@@ -47,6 +47,8 @@
 		D9514CFA2333B796001BED00 /* Genre.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9514CF92333B796001BED00 /* Genre.storyboard */; };
 		D9514CFD2333BB73001BED00 /* GenreCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9514CFC2333BB73001BED00 /* GenreCellViewController.swift */; };
 		D9514CFF2333BB92001BED00 /* GenreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9514CFE2333BB92001BED00 /* GenreCell.xib */; };
+		D9514D022333C8AA001BED00 /* AlbumCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9514D012333C8AA001BED00 /* AlbumCellViewController.swift */; };
+		D9514D062333C8DF001BED00 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9514D052333C8DF001BED00 /* AlbumCell.xib */; };
 		D98DF3E823222760003F376A /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF3E723222760003F376A /* ArtistCellViewController.swift */; };
 		D98DF3EC23227383003F376A /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EB23227383003F376A /* ArtistCell.xib */; };
 		D98DF3EF2322AD7F003F376A /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DF3EE2322AD7F003F376A /* Artists.storyboard */; };
@@ -138,6 +140,8 @@
 		D9514CF92333B796001BED00 /* Genre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Genre.storyboard; sourceTree = "<group>"; };
 		D9514CFC2333BB73001BED00 /* GenreCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCellViewController.swift; sourceTree = "<group>"; };
 		D9514CFE2333BB92001BED00 /* GenreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreCell.xib; sourceTree = "<group>"; };
+		D9514D012333C8AA001BED00 /* AlbumCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewController.swift; sourceTree = "<group>"; };
+		D9514D052333C8DF001BED00 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
 		D98DF3E723222760003F376A /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D98DF3EB23227383003F376A /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D98DF3EE2322AD7F003F376A /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -438,6 +442,15 @@
 			path = GenreCell;
 			sourceTree = "<group>";
 		};
+		D9514D002333C89A001BED00 /* AlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9514D012333C8AA001BED00 /* AlbumCellViewController.swift */,
+				D9514D052333C8DF001BED00 /* AlbumCell.xib */,
+			);
+			path = AlbumCell;
+			sourceTree = "<group>";
+		};
 		D98DF3E623222746003F376A /* ArtistsCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,8 +466,8 @@
 				D98DF3F623252376003F376A /* Music */,
 				D98DF3F523252368003F376A /* Live */,
 				D98DF3F723252384003F376A /* Wiki */,
-				D98DF3F12322AE4E003F376A /* ArtistPage.storyboard */,
 				D98DF3F32322AE80003F376A /* ArtistPageViewController.swift */,
+				D98DF3F12322AE4E003F376A /* ArtistPage.storyboard */,
 			);
 			path = ArtistPage;
 			sourceTree = "<group>";
@@ -472,6 +485,7 @@
 		D98DF3F623252376003F376A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				D9514D002333C89A001BED00 /* AlbumCell */,
 				D98DF4042325CA1F003F376A /* MusicCell */,
 				D98DF3F82325239A003F376A /* MusicViewController.swift */,
 				D98DF3FA232523BB003F376A /* Music.storyboard */,
@@ -713,6 +727,7 @@
 				D98DF41C23267D30003F376A /* LivePage.storyboard in Resources */,
 				D98DF40323252471003F376A /* ArtistWiki.storyboard in Resources */,
 				D98DF4122326665A003F376A /* RegisterArtist.storyboard in Resources */,
+				D9514D062333C8DF001BED00 /* AlbumCell.xib in Resources */,
 				D98DF43F232B4EAC003F376A /* FavoriteArtistCell.xib in Resources */,
 				D98DF436232B218E003F376A /* LiveSchedule.storyboard in Resources */,
 			);
@@ -778,6 +793,7 @@
 				D9A7A34E232B6DC7002F410C /* WikiModel.swift in Sources */,
 				D98DF434232B215D003F376A /* LiveScheduleViewController.swift in Sources */,
 				D94A217F232C9550000D4071 /* LiveAPIRequest.swift in Sources */,
+				D9514D022333C8AA001BED00 /* AlbumCellViewController.swift in Sources */,
 				D9A7A350232B70A3002F410C /* CommentModel.swift in Sources */,
 				D9514CDD2330BBFC001BED00 /* LiveMapViewController.swift in Sources */,
 				D9514CE22333A189001BED00 /* ArtistBalloonViewController.swift in Sources */,
